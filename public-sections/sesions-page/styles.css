@@ -1,14 +1,16 @@
-
-
-body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
     background-color: black;
-    min-height: 90vh;
-    width: 100%;
+    color: aliceblue;
     font-family: 'Raleway', sans-serif;
+    font-weight: 100;
 }
 
 .inicio_de_sesion {
-    color: aliceblue;
     width: 15%;
     float: right;
     padding: 8px;
@@ -24,12 +26,11 @@ body {
     margin-left: 3rem;
 }
 
+
 .btn {
-    background-color: rgb(8, 8, 8);
-    color: aliceblue;
-    font-size: 1.2rem;
-    width: 200px;
-    padding: 8px;
+    font-size: 0.9rem;
+    width: 100px;
+    padding: 4px;
     margin: 8px auto;
     text-align: center;
     border-radius: 5px;
@@ -45,24 +46,16 @@ body {
     box-shadow: inset aliceblue 0 0 3px, rgb(162, 167, 170) 1px 1px 2px;
 }
 
-
 .btn_inicio,
 .btn_registro {
-    color: aliceblue;
     width: fit-content;
 }
 
 /* ☻  ☻ ☻ ☻ ☻ ☻ ☻ ☻ */
-
-
 /* FORMULARIO MODAL */
-
-
 /* ☻  ☻ ☻ ☻ ☻ ☻ ☻ ☻ */
 
 .formulario {
-    background-color: rgb(8, 8, 8);
-    color: aliceblue;
     max-width: 20rem;
     max-height: 30rem;
     border-radius: 10px;
@@ -75,7 +68,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     visibility: hidden;
-    animation: animation 1.5s ease-in-out;  
+    animation: animation 1.5s ease-in-out;
     animation-delay: 0.75s;
 }
 
@@ -89,44 +82,4 @@ body {
     width: 95%;
     padding: 5px;
     margin: 8px;
-}
-
-.btn_iniciar_sesion,
-.btn_registrarse {
-    width: 45%;
-    visibility: hidden;
-}
-
-.minimum {
-    color: rgb(135, 139, 143);
-    font-size: .6rem;
-}
-
-.solo_para_el_registro {
-    visibility: hidden;
-}
-
-@keyframes animation {
-
-    0% {
-        background-color: rgb(255, 255, 255);
-        box-shadow: inset aliceblue 0 0 33px, rgb(18, 30, 41) 1px 1px 33px, rgba(33, 93, 150, 0.822) 3px 3px 29px;
-    }
-    100% {
-        width: 100%;
-        height: fit-content;
-        box-shadow: inset aliceblue 0 0 3px, rgb(18, 30, 41) 1px 1px 3px, rgba(33, 93, 150, 0.822) 3px 3px 9px;
-    }
-}
-
-/* ☻  ☻ ☻ ☻ fin del formulario modal ☻ ☻ ☻ ☻ */
-
-
-/* global para errores */
-
-.error {
-    background-color: rgba(243, 17, 17, 0.973);
-    color: aliceblue;
-    border-radius: 10px;
-    box-shadow: inset rgba(240, 248, 255, 0.822) 0 0 20px, rgba(224, 23, 9, 0.603) 0 0 20px;
 }
