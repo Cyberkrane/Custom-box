@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+}
+
+.inicio_de_sesion {
+    width: 15%;
+    float: right;
+    padding: 8px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.inicio_de_sesion h2 {
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 100;
+    text-transform: capitalize;
+    margin-left: 3rem;
+}
+
+
+.btn {
+    font-size: 0.9rem;
+    width: 100px;
+    padding: 4px;
+    margin: 8px auto;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: inset aliceblue 0 0 3px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: inset aliceblue 0 0 3px, rgb(18, 30, 41) 1px 1px 3px, rgba(145, 156, 167, 0.795) 2px 2px 3px;
+}
+
+.btn:active {
+    box-shadow: inset aliceblue 0 0 3px, rgb(162, 167, 170) 1px 1px 2px;
+}
+
+.btn_inicio,
+.btn_registro {
+    width: fit-content;
+}
+
+/* ☻  ☻ ☻ ☻ ☻ ☻ ☻ ☻ */
+/* FORMULARIO MODAL */
+/* ☻  ☻ ☻ ☻ ☻ ☻ ☻ ☻ */
+
+.formulario {
+    max-width: 20rem;
+    max-height: 30rem;
+    border-radius: 10px;
+    box-shadow: inset aliceblue 0 0 3px, rgb(18, 30, 41) 1px 1px 3px, rgba(33, 93, 150, 0.822) 3px 3px 9px;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    visibility: hidden;
+    animation: animation 1.5s ease-in-out;
+    animation-delay: 0.75s;
+}
+
+.header_form {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+.formulario input {
+    width: 95%;
+    padding: 5px;
+    margin: 8px;
+}

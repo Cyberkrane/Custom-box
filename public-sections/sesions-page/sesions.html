@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sesions</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;900&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+
+
+    <div class="inicio_de_sesion">
+        <h2>Bienvenid@</h2>
+        <div class="btn btn_inicio" onclick="btnInicio()">iniciar</div>
+        <div class="btn btn_registro" onclick="btnRegistrarse()">registro</div>
+    </div>
+
+
+    <!-- >> FORMULARIO << -->
+    <form class="formulario" id="formulario">
+
+        <div class="header_form">U</div>
+        <input type="text" name="usuario" id="user" placeholder="usuario" required autocomplete="off">
+        <input type="password" name="contraseña" id="pass" placeholder="contraseña" required>
+        <div class="solo_para_el_registro">
+            <label for="genero">hombre o mujer?</label>
+            <input type="text" name="genero" id="genero" placeholder="genero de nacimiento" required>
+        </div>
+
+
+        <div class="btn btn_iniciar_sesion" type="submit" onclick="iniciarSesion(user.value,pass.value)">inicio
+        </div>
+        <div class="btn btn_registrarse" type="submit" onclick="registrarse(user.value,pass.value,genero.value)">
+            registrarse</div>
+
+
+    </form>
+
+
+    <script src="./sesions.js"></script>
+
 </body>
+
 </html>

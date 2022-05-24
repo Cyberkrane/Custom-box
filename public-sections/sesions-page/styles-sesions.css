@@ -1,0 +1,132 @@
+
+
+body {
+    background-color: black;
+    min-height: 90vh;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.inicio_de_sesion {
+    color: aliceblue;
+    width: 15%;
+    float: right;
+    padding: 8px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.inicio_de_sesion h2 {
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 100;
+    text-transform: capitalize;
+    margin-left: 3rem;
+}
+
+.btn {
+    background-color: rgb(8, 8, 8);
+    color: aliceblue;
+    font-size: 1.2rem;
+    width: 200px;
+    padding: 8px;
+    margin: 8px auto;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: inset aliceblue 0 0 3px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: inset aliceblue 0 0 3px, rgb(18, 30, 41) 1px 1px 3px, rgba(145, 156, 167, 0.795) 2px 2px 3px;
+}
+
+.btn:active {
+    box-shadow: inset aliceblue 0 0 3px, rgb(162, 167, 170) 1px 1px 2px;
+}
+
+
+.btn_inicio,
+.btn_registro {
+    color: aliceblue;
+    width: fit-content;
+}
+
+/* ☻  ☻ ☻ ☻ ☻ ☻ ☻ ☻ */
+
+
+/* FORMULARIO MODAL */
+
+
+/* ☻  ☻ ☻ ☻ ☻ ☻ ☻ ☻ */
+
+.formulario {
+    background-color: rgb(8, 8, 8);
+    color: aliceblue;
+    max-width: 20rem;
+    max-height: 30rem;
+    border-radius: 10px;
+    box-shadow: inset aliceblue 0 0 3px, rgb(18, 30, 41) 1px 1px 3px, rgba(33, 93, 150, 0.822) 3px 3px 9px;
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    visibility: hidden;
+    animation: animation 1.5s ease-in-out;  
+    animation-delay: 0.75s;
+}
+
+.header_form {
+    width: 100%;
+    text-align: center;
+    margin: 20px;
+}
+
+.formulario input {
+    width: 95%;
+    padding: 5px;
+    margin: 8px;
+}
+
+.btn_iniciar_sesion,
+.btn_registrarse {
+    width: 45%;
+    visibility: hidden;
+}
+
+.minimum {
+    color: rgb(135, 139, 143);
+    font-size: .6rem;
+}
+
+.solo_para_el_registro {
+    visibility: hidden;
+}
+
+@keyframes animation {
+
+    0% {
+        background-color: rgb(255, 255, 255);
+        box-shadow: inset aliceblue 0 0 33px, rgb(18, 30, 41) 1px 1px 33px, rgba(33, 93, 150, 0.822) 3px 3px 29px;
+    }
+    100% {
+        width: 100%;
+        height: fit-content;
+        box-shadow: inset aliceblue 0 0 3px, rgb(18, 30, 41) 1px 1px 3px, rgba(33, 93, 150, 0.822) 3px 3px 9px;
+    }
+}
+
+/* ☻  ☻ ☻ ☻ fin del formulario modal ☻ ☻ ☻ ☻ */
+
+
+/* global para errores */
+
+.error {
+    background-color: rgba(243, 17, 17, 0.973);
+    color: aliceblue;
+    border-radius: 10px;
+    box-shadow: inset rgba(240, 248, 255, 0.822) 0 0 20px, rgba(224, 23, 9, 0.603) 0 0 20px;
+}
