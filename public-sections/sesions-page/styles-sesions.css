@@ -19,13 +19,13 @@ body {
     justify-content: space-around;
     align-items: center;
 }
-
-.inicio_de_sesion h2 {
+header{
     width: 100%;
-    font-size: 1.1rem;
-    font-weight: 100;
-    text-transform: capitalize;
-    margin-left: 3rem;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .btn {
