@@ -6,19 +6,19 @@ class Player {
         this.genero = genero;
     }
 }
+//////////////////////////////////////////////////////////////////////////
+
 
 // ACCESO AL DOM
-
 let saludo = document.querySelector('.inicio_de_sesion')
-
 let formulario = document.getElementById('formulario');
 let botonRegistrarse = document.querySelector('.btn_registrarse');
 let mensajeDelregistro = document.querySelector('.solo_para_el_registro');
 let botonIniciarSesion = document.querySelector('.btn_iniciar_sesion');
+//////////////////////////////////////////////////////////////////////////
 
 
 // BOTONES DE LLAMADA INICIO/REGISTRO
-
 function btnInicio() {
 
     formulario.style.visibility = "visible"
@@ -26,7 +26,6 @@ function btnInicio() {
     botonRegistrarse.style.visibility = "hidden"
 
 }
-
 function btnRegistrarse() {
 
     formulario.style.visibility = "visible"
@@ -35,13 +34,10 @@ function btnRegistrarse() {
     botonIniciarSesion.style.visibility = "hidden"
 
 }
-
-
+//////////////////////////////////////////////////////////////////////////
 
 
 // BOTONES DE ACCION
-
-
 // ************ INICIAR SESION ***********
 
 function iniciarSesion(user, pass, genero) {
@@ -72,7 +68,6 @@ function iniciarSesion(user, pass, genero) {
     } else {
         saludo.innerHTML = `
         <h2 class='error'>Nombre de usuario incorrecto!</h2>
-
         <div class="btn" onclick="location.reload()">reintentar</div>
         `
         formulario.style.visibility = "hidden"
@@ -80,7 +75,6 @@ function iniciarSesion(user, pass, genero) {
     }
 
 }
-
 function saludoSegunGenero(userGenero, userNombre) {
     if (userGenero == 'hombre') {
         saludo.innerHTML = `
@@ -92,7 +86,7 @@ function saludoSegunGenero(userGenero, userNombre) {
     `
     }
 }
-
+//////////////////////////////////////////////////////////////////////////
 
 
 // ******** REGISTRARSE **********  
@@ -103,10 +97,8 @@ function registrarse(user, pass, genero) {
     botonRegistrarse.style.visibility = "hidden";
     mensajeDelregistro.style.visibility = "hidden";
 
-
     var nuevoUsuario = new Player(user, pass, genero)
-    console.log(nuevoUsuario)
-
     localStorage.setItem('datos2', JSON.stringify(nuevoUsuario));
 
 }
+//////////////////////////////////////////////////////////////////////////

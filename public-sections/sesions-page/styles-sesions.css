@@ -1,5 +1,8 @@
-
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-color: black;
     min-height: 90vh;
@@ -9,11 +12,12 @@ body {
 
 .inicio_de_sesion {
     color: aliceblue;
-    width: 15%;
+    width: 18%;
     float: right;
     padding: 8px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .inicio_de_sesion h2 {
@@ -27,9 +31,8 @@ body {
 .btn {
     background-color: rgb(8, 8, 8);
     color: aliceblue;
-    font-size: 1.2rem;
-    width: 200px;
-    padding: 8px;
+    width: fit-content;
+    padding: 4px 8px;
     margin: 8px auto;
     text-align: center;
     border-radius: 5px;
@@ -129,4 +132,10 @@ body {
     color: aliceblue;
     border-radius: 10px;
     box-shadow: inset rgba(240, 248, 255, 0.822) 0 0 20px, rgba(224, 23, 9, 0.603) 0 0 20px;
+}
+
+@media screen and (max-width: 450px) {
+    .inicio_de_sesion{
+        width: fit-content;
+    }
 }
